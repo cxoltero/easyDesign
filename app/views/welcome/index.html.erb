@@ -1,1 +1,62 @@
-<h1>index page</h1>
+<div class="main">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+  <div class="carousel-inner">
+    <!--first slide -->
+    <div class="item active">
+      <%= image_tag "1705.JPG" %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Get set, Go!</h1>
+            <p><a class="btn btn-lg btn-primary btn-purple" href="http://www.hotels.com" role="button">Find your tickets here!</a></p>
+          <!--<p>URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p> -->
+        </div>
+      </div>
+    </div>
+    <!--second  slide -->
+    <div class="item">
+      <%= image_tag "1725.JPG" %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Explore the outdoors</h1>
+          <p>Discover all the cool places that nature has to offer!</p>
+          <p><a class="btn btn-lg btn-primary" href="http://outdoor-adventures.meetup.com/cities/us/ma/boston/s" role="button">Learn more</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!--third slide-->
+
+    <div class="item">
+      <%= image_tag "1716.JPG" %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Pack up and go!</h1>
+          <p>Find the best traveling deals and tackle your bucket list!</p>
+          <p><a class="btn btn-lg btn-primary" href="http://www.kayak.com" role="button">Go Now</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!--fourth slide -->
+    <div class="item">
+      <%= image_tag "1714.JPG" %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Meet new people!</h1>
+          <p>What are you waiting for?</p>
+          <p><a class="btn btn-lg btn-primary" href="http://www.meetup.com" role="button">Find out more</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="fa fa-chevron-left"></span></a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="fa fa-chevron-right"></span></a>
+</div>
+</div>
