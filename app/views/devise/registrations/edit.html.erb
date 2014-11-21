@@ -1,6 +1,6 @@
 <div class="row form-group">
   <div class="col-md-3 center-block no-float">
-    <h2><span class="glyphicon glyphicon-usd">Edit <%= resource_name.to_s.humanize %></span></h2>
+    <h2><i class="fa fa-user"></i> Edit <%= resource_name.to_s.humanize %></h2>
 
       <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
         <%= devise_error_messages! %>

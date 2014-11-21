@@ -7,6 +7,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+
+
 <% if notice %><p class="alert alert-success"><%= notice %></p><%end%>
 <% if alert %><p class="alert alert-danger"><%= alert %></p><%end%>
 
@@ -14,7 +17,7 @@
     <nav>
       <ul class="nav nav-tabs">
         <li><%= link_to "Home",root_path%></li>
-
+      <div class="nav nav-tabs navbar-right">
       <% if user_signed_in? %>
         <li><%= link_to "Edit Profile", edit_user_registration_path(current_user) %>
         <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
@@ -23,6 +26,7 @@
         <li><%= link_to "Sign In", new_user_session_path %></li>
         <li><%= link_to "Sign Up", new_user_registration_path%></li>
       <%end%>
+      </div>
       </ul>
     </nav>
   </header>

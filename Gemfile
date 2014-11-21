@@ -4,6 +4,18 @@ source 'https://rubygems.org'
 gem 'devise', '~> 3.4.1'
 
 gem 'bootstrap-sass', '~> 3.3.1.0'
+
+gem 'font-awesome-rails'
+# omniauth installation
+gem 'omniauth'
+
+# middleware for omniauth
+gem 'omniauth-facebook'
+
+
+
+
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
 # Use postgresql as the database for Active Record

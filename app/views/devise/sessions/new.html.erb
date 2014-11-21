@@ -1,6 +1,6 @@
-<div class="row form-group">
+<div class="row form-group";>
   <div class="col-md-3 center-block no-float">
-    <h2><span class="glyphicon glyphicon-usd">Sign in</span></h2>
+    <h2><i class="fa fa-user"></i> Sign in </span></h2>
 
     <%= form_for(resource, as: resource_name, url: session_path(resource_name), html:{role: "form"}) do |f| %>
       <div class="form-group">
@@ -26,9 +26,20 @@
       </div>
 
 
+    <div id="fb-root">
     <div class="text-center">
       <%= render "devise/shared/links" %>
+          <br/>
+
+        <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+        </fb:login-button>
+
+        <div id="status">
+        </div>
     </div>
+    </div>
+
+
   </div>
 </div>
 
